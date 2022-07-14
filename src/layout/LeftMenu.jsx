@@ -8,7 +8,7 @@ const LeftMenu = () => {
     }, []);
     const [showChildMenu, setShowChildMenu] = useState(false);
     const [menus, setMenus] = useState([]);
-    const [curMenu, setCurMenu] = useState(menus[0]);
+    const [curMenu, setCurMenu] = useState(null);
     let timer;
 
     const getMenus = () => {
@@ -26,7 +26,7 @@ const LeftMenu = () => {
     const leaveMenu = () => {
         timer = setTimeout(() => {
             setShowChildMenu(false);
-            setCurMenu('');
+            setCurMenu(null);
         }, 150);
     };
 
@@ -36,7 +36,7 @@ const LeftMenu = () => {
 
     const leaveSubMenu = () => {
         setShowChildMenu(false);
-        setCurMenu('');
+        setCurMenu(null);
     };
     return (
         <div className="m-menu">
