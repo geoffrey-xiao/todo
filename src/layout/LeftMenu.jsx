@@ -6,7 +6,6 @@ const LeftMenu = () => {
     useEffect(() => {
         getMenus();
     }, []);
-    const [showChildMenu, setShowChildMenu] = useState(false);
     const [menus, setMenus] = useState([]);
     const [curMenu, setCurMenu] = useState(null);
     let timer;
@@ -25,7 +24,6 @@ const LeftMenu = () => {
 
     const leaveMenu = () => {
         timer = setTimeout(() => {
-            setShowChildMenu(false);
             setCurMenu(null);
         }, 150);
     };
@@ -35,7 +33,10 @@ const LeftMenu = () => {
     };
 
     const leaveSubMenu = () => {
-        setShowChildMenu(false);
+        setCurMenu(null);
+    };
+
+    const goItems = () => {
         setCurMenu(null);
     };
     return (
@@ -44,7 +45,7 @@ const LeftMenu = () => {
                 onMouseLeave={leaveMenu}>
                 <div className='menu-title'>Test Admin</div>
                 {menus.map(item => (
-                    <div key={item.id}
+                    <div key={item.type}
                         className="menu-item"
                         onMouseEnter={() => enterMenu(item.type)}
                     >
@@ -56,10 +57,12 @@ const LeftMenu = () => {
 
                 !curMenu ? null : <div className="sub-menu"
                     onMouseEnter={enterSubMenu}
-                    onMouseLeave={leaveSubMenu}>
+                    onMouseLeave={leaveSubMenu}
+                >
                     {
                         curMenu.child && curMenu.child.map(item => (
-                            <div className="sub-menu-items">
+                            <div className="sub-menu-items"
+                                onClick={() => goItems()}>
                                 <div className="sub-item">
                                     {item}
                                 </div>

@@ -37,15 +37,14 @@
   padding: 20px;
   position: absolute;
   left: 230px;
-  top: 0px;
+  top: 40px;
   width: 600px;
-  height: 100%;
+  min-height: 600px;
   background: #fff;
   z-index: 99999;
   color: #000;
   font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 4px;
 }
 .m-menu .sub-menu .sub-menu-items {
   width: 25%;
