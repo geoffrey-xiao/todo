@@ -1,0 +1,93 @@
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit !important;
+  text-decoration: none;
+}
+div:focus {
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.mt130 {
+  margin-top: 130px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+.page-container,
+.nav,
+.footer-con {
+  max-width: 1250px;
+  margin: 0 auto;
+}

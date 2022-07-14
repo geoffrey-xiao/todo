@@ -1,0 +1,80 @@
+.m-menu {
+  width: 230px;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-left: 20px;
+  color: #FFF;
+  position: relative;
+  background: #545c64;
+}
+.m-menu .nav {
+  height: 50px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+.m-menu .menu-title {
+  padding-bottom: 12px;
+}
+.m-menu .menu-item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.m-menu .menu-item:hover {
+  background: #000;
+  color: #ffd04b;
+}
+.m-menu .menu-item:hover > i {
+  opacity: 1;
+}
+.m-menu .sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: absolute;
+  left: 230px;
+  top: 0px;
+  width: 600px;
+  height: 100%;
+  background: #fff;
+  z-index: 99999;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.m-menu .sub-menu .sub-menu-items {
+  width: 25%;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.m-menu .sub-menu .sub-menu-items:hover {
+  background-color: #ffd04b;
+  color: #fff;
+}
+.m-menu .sub-menu .sub-menu-items h4 {
+  margin-top: 24px;
+  height: 22px;
+  line-height: 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.m-menu .sub-menu .sub-menu-items span {
+  color: #999;
+  font-size: 12px;
+  line-height: 15px;
+  display: inline-block;
+  margin-right: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.m-menu .sub-menu .sub-menu-items span:hover {
+  color: #31BBAC;
+}

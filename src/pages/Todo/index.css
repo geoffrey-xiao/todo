@@ -1,0 +1,46 @@
+.todoapp {
+  color: #000;
+}
+.input__lg {
+  width: 400px;
+  margin-right: 8px;
+}
+button {
+  border: none;
+  padding: 4px 10px;
+}
+.filters {
+  display: flex;
+  justify-content: space-around;
+}
+.filters button {
+  flex: 1;
+  text-align: center;
+}
+.btn-group .btn {
+  margin-right: 8px;
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.c-cb {
+  color: #000;
+}
+.add-form {
+  margin-bottom: 20px;
+}
+.state-btn {
+  text-align: center !important;
+}
+.todo {
+  margin-bottom: 20px;
+}
+.active-filter {
+  background-color: #ffd04b;
+  color: #fff;
+}
